@@ -232,3 +232,61 @@ footer {
     }
 
 }
+/* ===== JCB ENQUIRY FORM ===== */
+
+.enquiry {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.enquiry h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.enquiry select,
+.enquiry input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.enquiry select:focus,
+.enquiry input:focus {
+    border-color: #f5b400;
+    box-shadow: 0 0 5px rgba(245, 180, 0, 0.4);
+}
+
+.enquiry button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #f5b400;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enquiry button:hover {
+    transform: translateY(-2px);
+    background: #ffc107;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
