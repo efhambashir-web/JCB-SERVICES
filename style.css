@@ -290,3 +290,231 @@ footer {
     margin-top: 15px;
     font-weight: bold;
 }
+/* ===============================
+   KHAN JCB SERVICES - SERVICES
+   =============================== */
+
+.services {
+    position: relative;
+    padding: 80px 5%;
+    min-height: 650px;
+    overflow: hidden;
+
+    /* Background image */
+    background:
+        linear-gradient(rgba(0, 20, 35, 0.35), rgba(0, 20, 35, 0.45)),
+        url("jcb.jpg") center/cover no-repeat;
+}
+
+/* Heading */
+.services h2 {
+    text-align: center;
+    color: white;
+    font-size: 52px;
+    font-weight: 800;
+    margin: 0 0 60px;
+    letter-spacing: 1px;
+}
+
+.services h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    margin: 15px auto 0;
+    background: #ffbd00;
+    border-radius: 10px;
+}
+
+/* Main layout */
+.services-container {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+/* Left side */
+.services-intro {
+    color: white;
+}
+
+.services-intro h3 {
+    font-size: 55px;
+    line-height: 1;
+    margin: 0 0 25px;
+    font-weight: 800;
+}
+
+.services-intro h3 span {
+    color: #ffbd00;
+}
+
+.services-intro p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Yellow line */
+.services-intro::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 5px;
+    background: #ffbd00;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.call-btn,
+.whatsapp-btn {
+    display: block;
+    width: 210px;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.call-btn {
+    background: #ff3030;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: #16c76b;
+    color: white;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover {
+    transform: translateX(7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Cards area */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Individual card */
+.service-card {
+    background: rgba(255,255,255,0.96);
+    border-radius: 18px;
+    padding: 25px 18px;
+    min-height: 300px;
+    text-align: center;
+
+    border-top: 5px solid #ffbd00;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+
+    transition: all 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+/* Service icon */
+.service-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px auto 15px;
+}
+
+/* Card title */
+.service-card h3 {
+    color: #111;
+    font-size: 21px;
+    margin: 10px 0 12px;
+    font-weight: 800;
+}
+
+/* Card text */
+.service-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Yellow bottom line */
+.service-card::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #ffbd00;
+    border-radius: 5px;
+    margin: 20px auto 0;
+}
+
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 1000px) {
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-intro {
+        text-align: center;
+    }
+
+    .services-intro::after {
+        margin: 20px auto;
+    }
+
+    .call-btn,
+    .whatsapp-btn {
+        margin: 12px auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .services {
+        padding: 55px 20px;
+    }
+
+    .services h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .services-intro h3 {
+        font-size: 42px;
+    }
+
+    .services-intro p {
+        font-size: 16px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+}
